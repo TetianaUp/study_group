@@ -1,5 +1,8 @@
 package tests;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Student {
 
     int age;
@@ -16,25 +19,20 @@ public class Student {
     }
 
     public static void main(String[] args){
-        Student student = new Student();
-        student.age=18;
-        student.name="Maria";
-        student.curse=1;
-        student.printInfo();
+        Student studentOne = new Student(18, "Maria", 1);
+        studentOne.printInfo();
 
-        Student studentNTwo = new Student();
-        studentNTwo.age=27;
-        studentNTwo.name="Viktor";
-        studentNTwo.curse=4;
-        studentNTwo.printInfo();
+        Student studentTwo = new Student(27, "Viktor", 4);
+        studentTwo.printInfo();
 
-        Student studentNumThree = new Student();
-        studentNumThree.age=20;
-        studentNumThree.name="Kate";
-        studentNumThree.curse=2;
-        studentNumThree.printInfo();
-        Student studentNumFour= new Student(29, "Kris", 3);
-        Student studentNumFive= new Student(45, "Stanislav", 5);
+        Student studentThree = new Student(20, "Kate", 2);
+        studentThree.printInfo();
+        Student studentFour= new Student(29, "Kris", 3);
+        studentFour.printInfo();
+        Student studentFive= new Student(45, "Stanislav", 5);
+        studentFive.printInfo();
 
-    }
+
+        }
+
 }
